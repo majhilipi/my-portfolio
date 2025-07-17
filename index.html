@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-gray-800 text-white p-4 fixed w-full z-10 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">MyPortfolio</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center pt-24 bg-gray-100 px-4">
+    <img src="avtaar.jpg" alt="My Avatar" class="w-32 h-32 rounded-full mb-4 shadow-md"/>
+    <h2 class="text-3xl font-semibold">Hi, I'm Lipika Majhi</h2>
+    <p class="text-lg text-gray-600">Web Developer | Designer</p>
+    <p class="italic text-blue-500 mt-2">"Turning ideas into reality with code."</p>
+    <a href="#" class="mt-4 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Download Resume</a>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-16 px-6 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-2xl font-bold mb-6 text-center">About Me</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <p>Hello! I’m a passionate developer who loves creating web interfaces and solving problems. My goal is to work with a dynamic team and grow as a frontend developer.</p>
+          <p class="mt-4">I enjoy exploring new technologies and building creative solutions.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Key Skills</h3>
+          <ul class="list-disc pl-6">
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>Tailwind CSS</li>
+            <li>Git & GitHub</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold mt-6 mb-2">Education</h3>
+          <ul class="space-y-2">
+            <li class="bg-gray-100 p-4 rounded-lg">🎓 B.Sc. Computer Science - XYZ University (2022)</li>
+            <li class="bg-gray-100 p-4 rounded-lg">📚 Web Development Bootcamp - DevTown (2025)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="p-8 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-8">Project</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Project 1 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden p-6">
+        <h3 class="text-xl font-semibold text-gray-800 text-center mb-2">E-commerce Website</h3>
+        <p class="text-gray-600 text-center mb-4">
+          I have created an e-commerce site for the users, similar to Flipkart.
+        </p>
+        <div class="flex justify-center gap-2 flex-wrap">
+          <span class="bg-blue-100 text-blue-600 text-sm font-medium px-3 py-1 rounded-full">Tailwind</span>
+          <span class="bg-blue-100 text-blue-600 text-sm font-medium px-3 py-1 rounded-full">JS</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden p-6">
+        <h3 class="text-xl font-semibold text-gray-800 text-center mb-2">To-Do App</h3>
+        <p class="text-gray-600 text-center mb-4">
+          A simple To-Do list application where users can add, delete, and mark tasks as completed.
+        </p>
+        <div class="flex justify-center gap-2 flex-wrap">
+          <span class="bg-green-100 text-green-600 text-sm font-medium px-3 py-1 rounded-full">HTML</span>
+          <span class="bg-green-100 text-green-600 text-sm font-medium px-3 py-1 rounded-full">Tailwind</span>
+          <span class="bg-green-100 text-green-600 text-sm font-medium px-3 py-1 rounded-full">JS</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden p-6">
+        <h3 class="text-xl font-semibold text-gray-800 text-center mb-2">Portfolio Website</h3>
+        <p class="text-gray-600 text-center mb-4">
+          This is my personal portfolio website built using HTML and Tailwind CSS to showcase my skills.
+        </p>
+        <div class="flex justify-center gap-2 flex-wrap">
+          <span class="bg-purple-100 text-purple-600 text-sm font-medium px-3 py-1 rounded-full">HTML</span>
+          <span class="bg-purple-100 text-purple-600 text-sm font-medium px-3 py-1 rounded-full">Tailwind CSS</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6 bg-white">
+    <div class="container mx-auto max-w-xl">
+      <h2 class="text-2xl font-bold mb-6 text-center">Contact Me</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full border p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+        <input type="email" placeholder="Email" class="w-full border p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+        <textarea placeholder="Message" rows="5" class="w-full border p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Submit</button>
+      </form>
+      <div class="mt-6 text-center space-x-4">
+        <a href="#" class="text-blue-600 hover:underline">LinkedIn</a>
+        <a href="#" class="text-blue-600 hover:underline">GitHub</a>
+        <a href="#" class="text-blue-600 hover:underline">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4">
+    <p>&copy; 2025 MyPortfolio | Built with ❤️ using Tailwind CSS</p>
+  </footer>
+
+</body>
+</html>
